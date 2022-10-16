@@ -6,7 +6,10 @@ namespace Csharp_Intermediate_Demo_Indexers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cookie = new HttpCookie();
+            cookie["name"] = "Mosh";
+
+            Console.WriteLine(cookie["name"]);
         }
     }
 }
